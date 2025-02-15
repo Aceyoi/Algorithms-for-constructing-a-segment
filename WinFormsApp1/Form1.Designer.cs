@@ -41,13 +41,14 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(418, 48);
+            button1.Location = new Point(418, 12);
             button1.Name = "button1";
             button1.Size = new Size(370, 111);
             button1.TabIndex = 0;
@@ -160,11 +161,22 @@
             label6.TabIndex = 12;
             label6.Text = "ЦДА";
             // 
+            // button2
+            // 
+            button2.Location = new Point(418, 129);
+            button2.Name = "button2";
+            button2.Size = new Size(370, 44);
+            button2.TabIndex = 13;
+            button2.Text = "Очистить";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -201,5 +213,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button button2;
     }
 }
